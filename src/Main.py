@@ -12,5 +12,6 @@ try:
     print(data[0])
 except KeyboardInterrupt: print(f'Остановлено вручную...........')
 except json.JSONDecodeError as e:
-    print(f"Ошибка вида: {e}")
+    print(f'Ошибка вида: {e}')
     print("---->:", fixed_content[max(0, e.pos-50):e.pos+50])
+
